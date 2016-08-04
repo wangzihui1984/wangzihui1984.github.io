@@ -1,0 +1,52 @@
+<!-- ! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{page.title }}</title>
+	<!-- link -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="/css/ihover.css">
+	<link rel="stylesheet" href="/css/wzh1.css">
+
+	<!-- script:src -->
+	<script src="/js/jquery-2.0.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+
+	<!-- for google
+	meta -->
+	<meta name="description" content=" {{ page.bastract }} ">
+</head>
+<body>
+
+<div name="this is nav">
+	{% include nav_bar.html %}
+
+</div> <!-- END nav -->
+
+<div name="this is header">
+	{% if page.header == "main" %}
+	   {% include main_header.html %}
+	{% elsif page.header == "category1" %}
+	   {% include cat1_header.html %}
+	{% else %}
+	   {% include cat2_header.html %}
+	{% endif %}
+
+</div> <!-- END Header -->
+
+<div name="this is content">
+
+    {{ content }}
+	
+</div> <!-- END content -->
+
+<div name="this is footer">
+	 {% include footer.html %}
+
+
+</div> <!-- End footer -->
+	
+</body>
+</html>

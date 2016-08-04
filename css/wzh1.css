@@ -1,0 +1,73 @@
+.website_header{
+	background-image: url(../image/sea.jpeg);
+	height: 600px;
+	width: 100%;
+background-size: 100% 100%;
+color:white;
+
+}
+.link1_header{
+	background-image: url(../image/sea.jpeg);
+	height: 250px;
+	width: 100%;
+background-size: 100% 100%;
+color:white;
+
+}
+.navbar-default{
+	margin-bottom: 10px;
+}
+
+#wzh-sidebar .active>a{
+	color: purple;
+	border-left: 2px dotted purple;
+	border-radius: 20px;
+	font-weight:bold;
+
+
+
+}
+.group{
+	height:600px;
+	width:300px;
+	background-color: yellow;
+    
+}
+.subgroup{
+	height: 300px;
+	width:150px;
+	background-color: orange;
+}
+
+
+
+.post_list{
+	height:100px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: grey;
+	width:500px;
+	transition: all 0.5s ease 0s;
+}
+.post_list:hover{
+	transform: scale(1.05);
+}
+.header_image1{
+	height: 200px;
+	border-width: 3px;
+	border-style: dashed;
+	border-radius: 30px;
+	border-color: yellow;
+}
+
+.my_footer li{
+	list-style: none;
+	display: inline;
+	padding: 0px 5px;
+
+}
+
+.my_footer li:not(:first-child):before{
+	content: "|";
+	padding-right: 10px;
+}
